@@ -12,5 +12,5 @@ linux系统下直接运行git_tag_msg可执行程序，具体说明如下：
     例如：同一目录下包含lz4的git仓库文件夹，使用命令./git_tag_msg lz4
 - 注意事先：
     1. git仓库名字后不要加 ‘/’ 
-    2. linux系统安装了cloc ( 代码量统计工具 )
+    2. linux系统安装了cloc ( 代码量统计工具 ：http://cloc.sourceforge.net/)
 
