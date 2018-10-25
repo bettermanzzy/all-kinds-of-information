@@ -8,7 +8,7 @@
 ### 使用说明
 linux系统下直接运行git_tag_msg可执行程序，具体说明如下：
 - 目录结构： git仓库文件夹 和 git_tag_msg可执行程序 在同一目录下
-- 运行命令： ./git_tag_msg + `parameter`  参数为git仓库名字 
+- 运行命令： ./git_tag_msg + `parameter`  参数为git仓库名字  
     例如：同一目录下包含lz4git仓库文件夹，使用命令./git_tag_msg lz4
 - 注意事先：
     1. git仓库名字后不要加 ‘/’ 
