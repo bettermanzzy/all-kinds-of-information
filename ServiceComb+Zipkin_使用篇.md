@@ -1,5 +1,5 @@
 ﻿@[TOC](ServiceComb+Zipkin:使用篇——自定义追踪功能)
-# 自定义追踪功能
+# ServiceComb+Zipkin:使用篇——自定义追踪功能
 ServiceComb 支持用户在程序中的指定位置处增加追踪数据，可以实现更细力度的追踪。  
 ## 使用步骤
 添加依赖
