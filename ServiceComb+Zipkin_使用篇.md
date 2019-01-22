@@ -1,7 +1,6 @@
 ﻿@[TOC](ServiceComb+Zipkin:使用篇——自定义追踪功能)
 # 自定义追踪功能
-ServiceComb 支持用户在程序中的指定位置处增加追踪数据，可以实现更细力度的追踪。
-（关于ServiceComb 如何使用zipkin实施调用链追踪，参考 http://servicecomb.apache.org/docs/tracing-with-servicecomb/ ）
+ServiceComb 支持用户在程序中的指定位置处增加追踪数据，可以实现更细力度的追踪。  
 ## 使用步骤
 添加依赖
 ```
@@ -81,4 +80,6 @@ public class CalculatorServiceImpl implements CalculatorService {
 	在calculator服务中配置自定义追踪功能，添加注解 `@Span`在calculator服务的方法上 。运行bmi程序，zipkin追踪耗时情况如下。根据span占用的时间戳，可以确定延时问题出现在calculate方法处，点击span，可查看call.path 获取calculate方法的具体位置。![zipkin追踪异常情况](https://img-blog.csdnimg.cn/20190121200305278.png)![span信息信息](https://img-blog.csdnimg.cn/20190121200411404.png)
 ## 总结
 从上面的实例可以看出，通过配置ServiceComb的自定义追踪功能，可以实现对服务中调用方法、接口的追踪，实现更细力度化的追踪，这对于我们监控服务内部调用时延、定位服务中的延时问题等非常有帮助。
+## 参考
+ServiceComb项目如何使用zipkin 实施调用链追踪：http://servicecomb.apache.org/docs/tracing-with-servicecomb/
 
